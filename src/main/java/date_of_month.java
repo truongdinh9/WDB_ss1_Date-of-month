@@ -19,7 +19,11 @@ public class date_of_month {
                 System.out.println("Thang " + month + "co 31 ngay.");
                 break;
             default:
-               if(month<12) {System.out.println("Thang " + month + "co 30 ngay.");}
+                if (month < 12 && month > 0) {
+                    System.out.println("Thang " + month + "co 30 ngay.");
+                } else {
+                    System.out.println("Thang khong hop le ");
+                }
         }
     }
 }
